@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Desafío 3 - Índice</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+      <h1>Desafío 3 - Funciones y Eventos</h1>
+  
+      <h2>Pruebas de Funciones</h2>
+      <div id="resultados">
+        <p>Cargando resultados de funciones...</p>
+      </div>
+  
+      <h2>Páginas con Interacción</h2>
+      <ul>
+        <li><a href="pintar.html">Pintar Elemento</a></li>
+        <li><a href="4_colores.html">Interacción con Teclado</a></li>
+      </ul>
+  
+      <!-- Al final del body -->
+<script src="1_funcion.js"></script>
+<script src="2_arrow.js"></script>
+<script>
+  const resultado1 = example(1, 2, 3);
+  const resultado2 = suma(5, 7);
+
+  document.getElementById("resultados").innerHTML = `
+    <p>Resultado de <code>example(1, 2, 3)</code>: <strong>${resultado1}</strong></p>
+    <p>Resultado de <code>suma(5, 7)</code>: <strong>${resultado2}</strong></p>
+  `;
+</script>
+    </div>
+  </body>
+  
+</html>

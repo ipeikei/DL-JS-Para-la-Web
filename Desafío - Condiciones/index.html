@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Desafío 2 - Condiciones</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Desafío 1 -->
+  <div class="container">
+
+    <div class="desafio1">
+    <h2>Desafío 1: Imagen con borde al hacer clic</h2>
+    <div class="imagen-container">
+      <img id="imagen" src="assets/img/Peperomiahope.webp" alt="Imagen clickeable">
+    </div>
+</div>
+  
+
+  <!-- Desafío 2 -->
+   <div class="desafio2"> 
+
+  <h2>Desafío 2: Selección de stickers</h2>
+  <div class="stickers-container">
+
+    <div class="stickers">
+        <img class="sticker-img" src="assets/img/AllMight.webp" alt="Sticker 1">
+        <input type="number" id="sticker1" min="0">
+    </div>
+
+    <div class="stickers">
+        <img class="sticker-img" src="assets/img/BoPeep.webp" alt="Sticker 2">
+        <input type="number" id="sticker2" min="0">
+    </div>
+
+    <div class="stickers">
+        <img class="sticker-img" src="assets/img/Jetson.webp" alt="Sticker 3">
+        <input type="number" id="sticker3" min="0">
+    </div>
+
+  </div>
+
+  <div class="verificar">
+  <button onclick="verificarStickers()">Verificar</button>
+  <p id="resultadoStickers"></p>
+    </div>
+
+</div>
+
+  <!-- Desafío 3 -->
+   <div class="desafio3">
+  <h2>Desafío 3: Validación de contraseña</h2>
+  <div class="contrasena">
+  <select id="num1">
+    <option value="0">-</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  <select id="num2">
+    <option value="0">-</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  <select id="num3">
+    <option value="0">-</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  <button onclick="verificarPassword()">Ingresar</button>
+  <p id="resultadoPassword"></p>
+</div>
+</div>
+</div>
+
+  <!-- Scripts -->
+<script src="assets/js/index.js"></script>
+
+</body>
+</html>

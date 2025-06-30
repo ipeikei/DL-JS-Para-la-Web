@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Teclas y Colores</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="key" style="width:200px;height:200px;background-color:white;border:1px solid black;"></div>
+
+  <script>
+    let color = "";
+
+    document.addEventListener("keydown", function(event) {
+      const keyDiv = document.getElementById("key");
+
+      // Cambiar color existente
+      if (event.key === "a") {
+        color = "pink";
+        keyDiv.style.backgroundColor = color;
+      } else if (event.key === "s") {
+        color = "orange";
+        keyDiv.style.backgroundColor = color;
+      } else if (event.key === "d") {
+        color = "skyblue";
+        keyDiv.style.backgroundColor = color;
+      }
+
+      // Crear nuevos divs
+      if (event.key === "q") {
+        crearDiv("purple");
+      } else if (event.key === "w") {
+        crearDiv("gray");
+      } else if (event.key === "e") {
+        crearDiv("brown");
+      }
+    });
+
+    function crearDiv(color) {
+      const nuevoDiv = document.createElement("div");
+      nuevoDiv.style.width = "200px";
+      nuevoDiv.style.height = "200px";
+      nuevoDiv.style.backgroundColor = color;
+      nuevoDiv.style.border = "1px solid black";
+      nuevoDiv.style.marginTop = "10px";
+      document.body.appendChild(nuevoDiv);
+    }
+  </script>
+</body>
+</html>
